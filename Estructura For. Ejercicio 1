@@ -1,0 +1,16 @@
+//Mostrar en pantalla todos los números pares posibles que hay entre 10 y 100
+
+
+public class ejercicioFor {
+
+	public static void main(String[] args) {
+
+		int i = 10;
+
+		for (i = 10; i < 101; i = i + 2) {
+			System.out.println(i);
+		}
+
+	}
+
+}
