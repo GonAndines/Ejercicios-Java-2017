@@ -1,0 +1,32 @@
+//Pedir por teclado un valor A  y un valor B, enteros. 
+//Intercambiar los valores de A y B de forma tal que al mostrar por pantalla, en A se muestre el valor ingresado para B. Y viceversa.
+
+
+import java.util.Scanner;
+
+public class EjercicioC {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		int NumA;
+		int NumB;
+		int Prev;
+
+		System.out.println("Ingrese un numero por favor");
+		NumA = scanner.nextInt();
+
+		System.out.println("Ingrese un segundo numero");
+		NumB = scanner.nextInt();
+
+		// Asignacion
+
+		Prev = NumA;
+		NumA = NumB;
+
+		System.out.println("Los valores son : " + NumA + " y " + Prev);
+
+	}
+
+}
