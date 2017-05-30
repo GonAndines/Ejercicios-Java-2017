@@ -1,0 +1,52 @@
+// - Ingresar dos números en las variables A y B respectivamente.
+// - Efectuar los siguientes cálculos e imprimir los resultados:
+// Si A > B entonces  C = A + B
+// Si A < B entonces C = A – B
+// Si A = B entonces C = A
+
+
+import java.util.Scanner;
+
+public class EjerE {
+
+	public static void main ( String [] args) {
+	
+	// Ejercicio E
+
+	Scanner scanner = new Scanner(System.in);
+
+	int A;
+	int B;
+	int C;
+	
+	// Ingreso de valores 
+	
+	System.out.print("Introduzca su primer numero") ;
+	
+	A = scanner.nextInt();
+	
+	System.out.print ( "Introduzca el segundo numero" ) ;
+	
+	B = scanner.nextInt();
+	
+	// Resultados 
+	
+	if ( A > B ){
+		C = A + B;
+		
+		System.out.println(A + " mas "+ B + " es Igual a " + C);
+		
+	}if ( A < B ){
+		C = A - B ;
+		
+		System.out.println(A + " menos "+ B + " es igual a " + C);
+
+		
+	}if (A == B) {
+	 C = A ;
+	 
+	 System.out.println(C + " es igual a "+ A);
+	 
+	}
+}
+}
