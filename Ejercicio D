@@ -1,0 +1,46 @@
+//-Ingresar dos números enteros en las variables A y B respectivamente.
+//-Si A es igual a 3 y B es igual a 4 entonces efectuar la suma de A,B y el resultado almacenarlo en la variable D.
+//-En caso contrario efectuar el producto de A, B y guardarlo en la variable D.
+//-Imprimir el valor de D
+
+import java.util.Scanner;
+
+public class EjercicioD {
+
+	public static void main(String[] args) {
+		
+	
+ 
+
+	Scanner scanner = new Scanner(System.in);
+
+	// Ejercicio D
+
+	int A;
+	int B;
+	int D;
+	
+	System.out.println("Introduzca un numero");
+	
+	A = scanner.nextInt();
+	
+	System.out.println("Introduzca un segundo numero");
+	
+	
+	B = scanner.nextInt() ;
+	
+
+	if ( A == 3 && B == 4 ){
+		
+		D = A + B;
+		
+		System.out.println(A + " más " + B + " es igual a " + D);
+	}else {
+		D = A * B ;
+		
+		System.out.println(A + " por " + B + " es igual a " + D);
+
+	};
+	
+	}
+}
