@@ -1,0 +1,34 @@
+
+		// Imprimir todos los números entre a y b, pero con una variante:
+		// hacer un bucle para cumplir la condición de que b sea mayor que a, si o si
+
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+
+		Scanner S = new Scanner(System.in);
+
+		int NumA = 0;
+		int NumB = 0;
+
+		System.out.println("Ingrese el primer numero");
+
+		NumA = S.nextInt();
+
+		System.out.println("Ingrese un segundo numero porfavorcito");
+
+		NumB = S.nextInt();
+
+		do {
+
+			System.out.println(NumA);
+			NumA = NumA + 1;
+
+		} while (NumA < NumB);
+
+	}
+
+}
