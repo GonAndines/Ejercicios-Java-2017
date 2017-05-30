@@ -1,0 +1,29 @@
+//Utilizando la estructura Do...while, mostrar en pantalla un menú de tres opciones.
+//El mismo se ejecuta hasta que se agregue un número menor que 1 o un número mayor de 3. 
+
+import java.util.Scanner;
+
+public class Ejercicio2While {
+
+	public static void main(String[] args) {
+
+		Scanner S = new Scanner(System.in);
+
+		int Opcion = 0;
+
+		do {
+
+			System.out.println("Pizzeria 'La Muzza', elegi entre una de nuestras tres variedades para pedir.");
+
+			System.out.println(" ");
+
+			System.out.println(
+					"Opcion 1 : Pizza Muzarella . Opcion 2: Pizza provenzal . Opcion 3 : Pizza mediterranea. Otra opcion : Presione cualquier numero  ");
+
+			Opcion = S.nextInt();
+
+		} while (Opcion >= 1 && Opcion <= 3);
+
+	}
+
+}
