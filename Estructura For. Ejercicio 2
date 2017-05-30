@@ -1,0 +1,32 @@
+
+
+		// Mostrar todos los números posibles que hay entre dos introducidos por teclado
+
+
+
+import java.util.Scanner;
+
+public class EjerFor2 {
+
+	public static void main(String[] args) {
+
+		Scanner S = new Scanner(System.in);
+
+		int Num = 0;
+		int Num2 = 0;
+
+		System.out.println("Ingrese el primer numero");
+
+		Num = S.nextInt();
+
+		System.out.println("Ingrese el ultimo numero a buscar");
+
+		Num2 = S.nextInt();
+
+		for (Num = Num; Num <= Num2; Num++) {
+
+			System.out.println(Num);
+		}
+	}
+
+}
