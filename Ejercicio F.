@@ -1,0 +1,24 @@
+//Comprobar si un número dado por teclado es par. 
+
+
+import java.util.Scanner;
+
+public class EjercicioF {
+
+	public static void main(String[] args) {
+		
+		Scanner S = new Scanner(System.in);
+		
+		int Numero = 0;
+		
+		System.out.println("Ingrese un numero para comprobar si es par.");
+		
+		Numero = S.nextInt();
+		
+		if ( Numero % 2 == 0){
+			System.out.println("El numero ingresado es par.");
+		} else {
+			System.out.println("El numero ingresado es impar.");
+		}
+	}
+}
