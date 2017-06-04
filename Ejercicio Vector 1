@@ -1,0 +1,21 @@
+Ejercicio a modo de prueba para analizar el funcionamiento de los arrays unidimensionales.
+
+
+/*Crear un vector de tres elementos de tipo numérico entero. 
+Colocar en cada uno de ellos un número par. 
+Luego, mostrar en consola, a todos los componentes del mismo.
+*/
+
+public class Ejer1Vectores {
+	
+	public static void main (String []args){
+		
+		int [] Pares = new int[] {2,4,6};
+		
+		for (int i=0;i < Pares.length ; i++){
+			System.out.println(Pares[i]);
+		}
+		
+	}
+
+}
