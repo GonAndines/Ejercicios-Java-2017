@@ -1,0 +1,47 @@
+/*Declarar y crear dos vectores de 10 elementos cada uno. 
+Uno de ellos será para trabajar con números enteros (DNI) y el otro para trabajar con texto (NOMBRE). 
+Pedir por teclado cada componente de los dos vectores, y al final, mostrarlos por pantalla. */
+
+import java.util.Scanner;
+
+
+public class VectorDniNombres {
+	
+	public static void main (String[]args){
+		
+		Scanner Dni = new Scanner(System.in);
+		Scanner Nombre = new Scanner(System.in);
+		
+		//Inicializar matrices
+		
+		
+		int VectorDni [] = new int[10];				
+		String VectorNombre [] = new String[10];
+		
+		
+			for (int j = 0; j < 10; j ++ ){
+				
+			
+			System.out.println("Ingrese el DNI");
+			
+			VectorDni[j] = Dni.nextInt();
+			
+			System.out.println("");
+					
+			System.out.println("Ingrese el Nombre");
+			
+			VectorNombre[j] = Nombre.next();
+			
+			}
+			
+				
+			for( int i = 0; i < 10 ; i++){
+				
+				System.out.println("DNI:" + VectorDni[i]);
+				System.out.println("Nombre:" + VectorNombre[i]);
+				
+			}
+		
+	}
+
+}
