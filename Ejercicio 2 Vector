@@ -1,0 +1,39 @@
+
+		// Cargar en un vector todos los sueldos de los 15 empleados de una
+		// empresa.
+		// Las cantidades deben ser cargadas por código. (no por teclado)
+
+		// Mostrar por pantalla los sueldos siguiendo el formato
+		// Empleado 1, sueldo $ 23500
+		// Empleado 2, sueldo $ 45670
+		// etc.
+
+public class VectorSueldos {
+
+	public static void main(String [] args) {
+
+		
+		int [] Vector = new int[15] ;
+		
+		Vector[0] = 23500;
+		Vector[1] = 45670;
+		Vector[2] = 31250;
+		Vector[3] = 27300;
+		Vector[4] = 23550;
+		Vector[5] = 23450;
+		Vector[6] = 30670;
+		Vector[7] = 29250;
+		Vector[8] = 32100;
+		Vector[9] = 25550;
+		Vector[10] = 22500;
+		Vector[11] = 19670;
+		Vector[12] = 21250;
+		Vector[13] = 23300;
+		Vector[14] = 20550;
+
+		for(int i = 0; i < Vector.length; i++) {
+			System.out.println("Sueldo: " + Vector[i]);
+		}
+	}
+
+}
