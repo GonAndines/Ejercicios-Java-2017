@@ -1,0 +1,37 @@
+/*Pedir por teclado la cantidad de elementos de un vector tipo entero.
+Por teclado también, ingresarle valores. 
+ Al final del proceso, mostrar por pantalla todos los elementos. */
+
+
+import java.util.Scanner;
+
+public class Vector4 {
+	
+	public static void main (String[]args){
+		
+		Scanner S = new Scanner(System.in);
+	
+		int Cantidad = 0;
+		
+		
+		System.out.println("Introduzca la cantidad de elementos a cargar.");
+		Cantidad = S.nextInt();
+		
+		int [] V;
+		
+		V = new int[Cantidad];
+		
+		for( int i = 0 ; i < Cantidad; i++){
+		
+			System.out.println("Introduzca el valor a cargar"]);
+			V[i] = S.nextInt();
+			}
+		
+		for(int i = 0; i < Cantidad; i++){
+	
+			System.out.println("El valor es: " + V[i]);
+		}
+		
+	}
+
+}
