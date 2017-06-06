@@ -1,0 +1,46 @@
+
+//Pedir por teclado la cantidad de elementos de un vector tipo entero. 
+//Ingresarle valores. 
+//Al final del proceso, mostrarle por pantalla al operador, solo los elementos de índice par: vector[2], vector[4], etc.
+
+import java.util.Scanner;
+
+public class Vector5 {
+
+	public static void main(String[] args) {
+
+		Scanner S = new Scanner(System.in);
+
+		// Iniciar variables
+
+		int Cant = 0;
+		int[] Vector;
+
+		// Pedir cantidades de numeros a ingresar y guardarlos en la variable.
+		do {
+			System.out.println("Ingrese los cantidad de numeros a ingresar despues");
+			Cant = S.nextInt();
+		} while (Cant < 0);
+
+		// Creacion del vector con la cantidad asignada
+		Vector = new int[Cant];
+
+		// Carga de numeros
+
+		for (int i = 0; i < Vector.length; i++) {
+			System.out.println("Ingrese el numero a cargar");
+			Vector[i] = S.nextInt();
+		}
+
+		int i = 0;
+		// Impresion de elementos pares.
+
+		for (i = 0; i < Cant; i += 2) {
+
+			System.out.println("El numero " + i + " es :" + Vector[i]);
+
+		}
+
+	}
+
+}
